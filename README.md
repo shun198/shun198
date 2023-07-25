@@ -1,3 +1,5 @@
+<h2 align="center">👋 Hi! I'm shun198.</h2>
+
 ## Skills
 <img alt="my skills" src="https://skillicons.dev/icons?theme=light&perline=6&i=python,django,dotnet,linux,mysql,nginx,docker,git,gitlab,github,githubactions,aws,vscode,visualstudio"/>
 
