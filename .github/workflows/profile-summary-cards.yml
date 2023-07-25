@@ -21,4 +21,4 @@ jobs:
           USERNAME: ${{ github.repository_owner }}
       - uses: kawamataryo/lapras-card-readme@main
         with:
-          SHARE_ID: "https://lapras.com/public/shun198"
+          SHARE_ID: "shun198"
