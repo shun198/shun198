@@ -23,3 +23,4 @@ jobs:
         with:
           SHARE_ID: "shun198"
           UPDATE_TIME: "false"
+          LANG: "en"
