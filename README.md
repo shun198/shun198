@@ -1,7 +1,7 @@
 # 👋 Hi! I'm shun198.
 
 ## Skills
-<img alt="my skills" src="https://skillicons.dev/icons?theme=light&perline=6&i=python,django,linux,mysql,postgres,nginx,docker,github,githubactions,aws,vscode"/>
+<img alt="my skills" src="https://skillicons.dev/icons?theme=light&perline=6&i=python,django,flask,linux,mysql,postgres,nginx,docker,github,githubactions,aws,vscode"/>
 
 ## My Qiita posts
 [![My Qiita posts](https://qiita-badge.apiapi.app/s/shun198/posts.svg)](http://qiita.com/shun198)
