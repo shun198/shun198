@@ -1,7 +1,9 @@
 # 👋 Hi! I'm shun198.
 
 ## Skills
-<img alt="my skills" src="https://skillicons.dev/icons?theme=light&perline=6&i=python,django,fastapi,linux,mysql,postgres,nginx,docker,github,githubactions,aws,gcp,kubernetes,terraform,vscode"/>
+[](https://github.com/syvixor/skills-icons)
+
+![Skills](https://skills-icons.vercel.app/api/icons?i=python,django,fastapi,linux,mysql,postgres,nginx,docker,aws,gcp,kubernetes,githubactions,argocd,dbt,terraform,github,vscode&perline=10)
 
 ## My Qiita posts
 [![My Qiita posts](https://qiita-badge.apiapi.app/s/shun198/posts.svg)](http://qiita.com/shun198)
