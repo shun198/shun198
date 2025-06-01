@@ -3,7 +3,7 @@
 ## Skills
 [](https://github.com/syvixor/skills-icons)
 
-![Skills](https://skills-icons.vercel.app/api/icons?i=python,django,djangorestframework,fastapi,linux,mysql,postgresql,nginx,docker,aws,gcp,kubernetes,githubactions,argocd,sentry,datadog,terraform,dbt,github,gitlab,vscode&perline=10)
+![Skills](https://skills-icons.vercel.app/api/icons?i=python,golang,django,djangorestframework,fastapi,linux,mysql,postgresql,kafka,nginx,docker,aws,gcp,kubernetes,githubactions,argocd,sentry,datadog,terraform,dbt,github,gitlab,vscode&perline=10)
 
 ## My Qiita posts
 [![My Qiita posts](https://qiita-badge.apiapi.app/s/shun198/posts.svg)](http://qiita.com/shun198)
