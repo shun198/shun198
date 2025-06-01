@@ -19,8 +19,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.SUMMARY_CARDS_TOKEN }}
         with:
           USERNAME: ${{ github.repository_owner }}
-      - uses: kawamataryo/lapras-card-readme@main
-        with:
-          SHARE_ID: "shun198"
-          UPDATE_TIME: "false"
-          LANG: "en"
