@@ -3,7 +3,7 @@
 ## Skills
 [](https://github.com/syvixor/skills-icons)
 
-![Skills](https://skills-icons.vercel.app/api/icons?i=typescript,python,golang,react,nextjs,storybook,django,djangorestframework,fastapi,pytest,linux,mysql,postgresql,nginx,docker,aws,gcp,kubernetes,githubactions,argocd,terraform,dbt,github,gitlab,vscode&perline=10)
+![Skills](https://skills-icons.vercel.app/api/icons?i=typescript,python,golang,react,nextjs,storybook,django,djangorestframework,fastapi,pytest,linux,mysql,postgresql,nginx,docker,aws,gcp,kubernetes,datadog,githubactions,argocd,terraform,dbt,github,gitlab,vscode&perline=10)
 
 ## Currently Learning
 [](https://github.com/syvixor/skills-icons)
