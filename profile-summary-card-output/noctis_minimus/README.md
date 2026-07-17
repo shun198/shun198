@@ -42,23 +42,3 @@
 ```
 
     
-
----
-
-![](./3-stats.svg)
-
-```
-![](https://raw.githubusercontent.com/shun198/shun198/master/profile-summary-card-output/noctis_minimus/3-stats.svg)
-```
-
-    
-
----
-
-![](./4-productive-time.svg)
-
-```
-![](https://raw.githubusercontent.com/shun198/shun198/master/profile-summary-card-output/noctis_minimus/4-productive-time.svg)
-```
-
-    
