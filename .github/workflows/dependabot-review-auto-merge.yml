@@ -1,0 +1,48 @@
+name: Dependabot review and auto-merge
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: dependabot-review-merge-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  review-and-merge:
+    if: github.event.pull_request.user.login == 'dependabot[bot]' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Read Dependabot update metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@d7267f607e9d3fb96fc2fbe83e0af444713e90b7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Approve and enable auto-merge for minor and patch updates
+        if: steps.metadata.outputs.update-type == 'version-update:semver-minor' || steps.metadata.outputs.update-type == 'version-update:semver-patch'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          EXPECTED_SHA: ${{ github.event.pull_request.head.sha }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          current_head="$(gh pr view "$PR_URL" --repo "$REPOSITORY" --json headRefOid --jq .headRefOid)"
+          if [[ "$current_head" != "$EXPECTED_SHA" ]]; then
+            echo "PR head changed during this run; skipping approval and auto-merge."
+            exit 0
+          fi
+
+          gh api --method POST "repos/$REPOSITORY/pulls/$PR_NUMBER/reviews" \
+            -f event=APPROVE \
+            -f commit_id="$EXPECTED_SHA"
+
+          gh pr merge "$PR_URL" --repo "$REPOSITORY" --auto --merge --match-head-commit "$EXPECTED_SHA"
